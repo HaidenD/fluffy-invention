@@ -107,7 +107,7 @@ export default class Presentation extends React.Component {
             <Layout fit>
             <Fill>
             <List textColor="six" textFont="quartenary" >
-              <ListItem>WSU-Tri Hackaton</ListItem>
+              <ListItem>WSU-Tri Hackathon</ListItem>
               <ListItem>Google Seattle</ListItem>
           </List>
             </Fill>
@@ -124,15 +124,16 @@ export default class Presentation extends React.Component {
         </Slide>
        
         <Slide > 
-            <Image src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/22791529_123065125031326_8807755859813011529_o.jpg?_nc_cat=0&oh=f3810130b64a0eed0ebf957eeedbe7f1&oe=5B7A6F3F"/>
+            <Image width="100%" src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/22791529_123065125031326_8807755859813011529_o.jpg?_nc_cat=0&oh=f3810130b64a0eed0ebf957eeedbe7f1&oe=5B7A6F3F"/>
         </Slide>
         <Slide>
           <Layout>
             <Fill>
-              <Image src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/28618712_150822318922273_3132469378816801040_o.jpg?_nc_cat=0&oh=ded5ff3d09bbf621041a91be723c87f0&oe=5BB0F3EF"/>
+              <Image width="420px"  src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/28618712_150822318922273_3132469378816801040_o.jpg?_nc_cat=0&oh=ded5ff3d09bbf621041a91be723c87f0&oe=5BB0F3EF"/>
+              <Image width="420px" src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/28619605_150822135588958_5667282196701796799_o.jpg?_nc_cat=0&_nc_eui2=AeHxGdnoRuq4F5FU4dTq5O2n_81RtNZfQGfYgS_Wg_ufNn_f0MZRvuPOn_QIRgy2YkN5KVB0sXEXltRd9SYVDWAWSdgljlz8gFUb4aq9euebPg&oh=f155c6eadd18c7530983ea9d4fe18d8b&oe=5BC3A7C1"/>
             </Fill>
             <Fill>
-              <Image src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/28871819_150822952255543_1521833959772495299_n.jpg?_nc_cat=0&oh=a355f5fc8625e2d6ac4f243b58f0cc7f&oe=5BBA31AB"/>
+              <Image height="640px" src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/28871819_150822952255543_1521833959772495299_n.jpg?_nc_cat=0&oh=a355f5fc8625e2d6ac4f243b58f0cc7f&oe=5BBA31AB"/>
             </Fill>
           </Layout>
           
@@ -143,6 +144,53 @@ export default class Presentation extends React.Component {
             <ListItem>{'Testing & Analytics'} </ListItem>
             <ListItem>{'Full Stack Development'} </ListItem>
           </List>
+        </Slide>
+        <Slide>
+          <Heading textColor="six" textAlign="center" fit > {"Testing & Analytics"} </Heading>
+          <List textColor="five">
+          <Layout textAlign="center">
+            <Fill>
+            <Heading size={6} textColor="five" textAlign="left">CORE</Heading>
+            </Fill>
+            <Fill>
+            <Heading size={6}  textColor="five">&nbsp;&nbsp;&nbsp;&nbsp;NSDD</Heading>
+            </Fill>
+            <Fill>
+            <Heading size={6}  textColor="five" textAlign="right">Tank Vapors</Heading>
+            </Fill>
+          </Layout>
+          </List>
+          <Text fit textColor="tertiary"> 
+            Testing integration using Selenium Webdriver.
+          </Text>
+          <Text fit textColor="tertiary">  
+            Manual testing and supported developers
+          </Text>
+          <Text fit textColor="tertiary"> 
+            Implemented React Google Analytics
+          </Text>
+        </Slide>
+        <Slide>
+          <Heading textColor="six" fit > {<a href="https://haidendeaton.me">Here</a>} </Heading>
+          <List textColor="five">
+              <ListItem>CORE</ListItem>
+              <ListItem>Tank Vapors</ListItem>
+          </List>
+        </Slide>
+        <Slide>
+          <Heading textColor="six" fit > {"Full Stack Development"} </Heading>
+          <List textColor="five">
+              <ListItem>DIET</ListItem>
+              <ListItem>DMAMC Portal</ListItem>
+              <ListItem>RNDR</ListItem>
+          </List>
+        </Slide>
+      
+      </Deck>
+    );
+  }
+}
+
           {/* <Layout>
             <Fill>
           <Heading size={6} textAlign="left" >Testing</Heading>
@@ -161,11 +209,3 @@ export default class Presentation extends React.Component {
           </List>
           </Fill>
             </Layout> */}
-
-     
-        </Slide>
-      
-      </Deck>
-    );
-  }
-}
