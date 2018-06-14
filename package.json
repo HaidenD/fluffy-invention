@@ -1,0 +1,23 @@
+{
+  "name": "presentationpnnl",
+  "version": "1.0.0",
+  "description": "Interview Presentation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create": "create-react-app my-presentation --scripts-version spectacle-scripts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HaidenD/fluffy-invention.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HaidenD/fluffy-invention/issues"
+  },
+  "homepage": "https://github.com/HaidenD/fluffy-invention#readme",
+  "dependencies": {
+    "create-react-app": "^1.5.2"
+  }
+}
