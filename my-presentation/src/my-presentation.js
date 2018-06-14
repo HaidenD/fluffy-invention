@@ -18,11 +18,13 @@ import {
   Fit,
   Typeface,
   Image,
+  S,
 } from 'spectacle';
 
 
 // Import theme
 import createTheme from 'spectacle/lib/themes/default';
+import layout from 'spectacle/lib/components/layout';
 
 // Require CSS
 require('normalize.css');
@@ -66,6 +68,14 @@ export default class Presentation extends React.Component {
             <Quote textColor="tertiary" textAlign='right' italic textFont="secondary" >Just a guy with a dream to build a better web.</Quote>
           </BlockQuote>
         </Slide>
+
+        <Slide>
+          <Heading lineHeight={1} size={3} textColor="tertiary" caps >Agenda</Heading>
+          <Layout fit><Fill><Heading  size={3} textColor="five">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Heading></Fill><Fill><Heading textAlign="left" textColor="six" >WSU&nbsp;</Heading></Fill></Layout>
+          <Layout fit><Fill><Heading  size={3} textColor="five">Time @</Heading></Fill><Fill><Heading textAlign="left" textColor="six">PNNL</Heading></Fill></Layout>
+          <Heading  lineHeight={1} size={3}  textColor="five">Side Projects </Heading>
+        </Slide>
+
         <Slide textColor="quartenary">
           <Heading fill textAlign='left'> Background </Heading>
           <List textColor="five" textFont="quartenary" >
@@ -74,6 +84,14 @@ export default class Presentation extends React.Component {
             <ListItem>Became a leader at WSU</ListItem>
           </List>
         </Slide>
+
+        <Slide>
+        <BlockQuote>
+            <Quote textColor="six"  caps  textFont="secondary" >I have not failed. I’ve just found 10,000 ways that won’t work.</Quote>
+            <Cite>Thomas Edison</Cite>
+          </BlockQuote>
+        </Slide>
+
         <Slide >
           <Heading   lineHeight={1} fit textColor="tertiary"> Google @ Pullman </Heading>
           <List textColor="five" textFont="quartenary" >
@@ -82,7 +100,7 @@ export default class Presentation extends React.Component {
             <ListItem>Success stories and how you could do better.</ListItem>
           </List>
           <Appear>
-          <Heading size={6} textAlign="left">
+          <Heading size={6} textColor="five" textAlign="left">
             What did google look for?
           </Heading>
           </Appear>
@@ -94,8 +112,8 @@ export default class Presentation extends React.Component {
           <ListItem>Do you have an CS internship?</ListItem>
           </Appear>
           </List>
-
         </Slide>
+
         <Slide>
           <Heading size={3} textFont="secondary" textAlign="left" textColor="six"> How have you supported a community using technology? </Heading>
         </Slide>
@@ -126,6 +144,7 @@ export default class Presentation extends React.Component {
         <Slide > 
             <Image width="100%" src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/22791529_123065125031326_8807755859813011529_o.jpg?_nc_cat=0&oh=f3810130b64a0eed0ebf957eeedbe7f1&oe=5B7A6F3F"/>
         </Slide>
+
         <Slide>
           <Layout>
             <Fill>
@@ -140,10 +159,8 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide>
           <Heading textColor="six" >PNNL</Heading>
-          <List fill textColor="five">
-            <ListItem>{'Testing & Analytics'} </ListItem>
-            <ListItem>{'Full Stack Development'} </ListItem>
-          </List>
+            <Heading fit >{'Testing & Analytics'} </Heading>
+            <Heading fit >{'Full Stack Development'} </Heading>
         </Slide>
         <Slide>
           <Heading textColor="six" textAlign="center" fit > {"Testing & Analytics"} </Heading>
@@ -171,21 +188,54 @@ export default class Presentation extends React.Component {
           </Text>
         </Slide>
         <Slide>
-          <Heading textColor="six" fit > {<a href="https://haidendeaton.me">Here</a>} </Heading>
-          <List textColor="five">
-              <ListItem>CORE</ListItem>
-              <ListItem>Tank Vapors</ListItem>
-          </List>
+          <Heading textColor="six"  textColor="six" > {<a style={{color:'#F7D08A'}} href="javascript: window.open('http://www.haidendeaton.me');">Web Portfolio</a>} </Heading>
         </Slide>
         <Slide>
           <Heading textColor="six" fit > {"Full Stack Development"} </Heading>
           <List textColor="five">
-              <ListItem>DIET</ListItem>
-              <ListItem>DMAMC Portal</ListItem>
-              <ListItem>RNDR</ListItem>
+              <ListItem>DIET - Responsive Design</ListItem>
+              <ListItem>DMAMC Portal - API/UI Design</ListItem>
+              <ListItem>RNDR -  API/UI Design</ListItem>
           </List>
         </Slide>
-      
+        <Slide>
+          <Heading textColor="six" fit > {"Imagine"} </Heading>
+        </Slide>
+        <Slide>
+          <Heading textColor="six" fit > {"Pickle"} </Heading>
+          <BlockQuote>
+            <Quote textColor="five" textAlign="right">A collaborative queue service for any community event.</Quote>
+          </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <Heading fit>Technologies Used:</Heading>
+          <Layout fit>
+            <Heading textColor="five" size={6}>Client Side</Heading>
+            <Heading textColor="five" size={6}>Server Side</Heading>
+          </Layout>
+          <Layout fit>
+            <Fill>
+            <List textAlign='center' textColor="six" textFont="quartenary" >
+              <ListItem>React</ListItem>
+              <ListItem>Redux</ListItem>
+              <ListItem>Sagas</ListItem>
+          </List>
+            </Fill>
+
+            <Fill>
+              <List  textAlign='right'  textColor="six" textFont="quartenary" >
+              <ListItem>Node&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ListItem>
+              <ListItem>Express&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</ListItem>
+              <ListItem>PostgreSQL</ListItem>
+            </List>
+            </Fill>
+            </Layout>
+        </Slide>
+        
+        <Slide>
+        <Heading textColor="six" > {<a style={{color:'#F7D08A'}} href="javascript: window.open('http://www.haidendeaton.me');">Pickle Song with Me.</a>} </Heading>
+        </Slide>
       </Deck>
     );
   }
