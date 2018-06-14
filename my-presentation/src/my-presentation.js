@@ -70,10 +70,10 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
-          <Heading lineHeight={1} size={3} textColor="tertiary" caps >Agenda</Heading>
-          <Layout fit><Fill><Heading  size={3} textColor="five">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Heading></Fill><Fill><Heading textAlign="left" textColor="six" >WSU&nbsp;</Heading></Fill></Layout>
-          <Layout fit><Fill><Heading  size={3} textColor="five">Time @</Heading></Fill><Fill><Heading textAlign="left" textColor="six">PNNL</Heading></Fill></Layout>
-          <Heading  lineHeight={1} size={3}  textColor="five">Side Projects </Heading>
+          <Heading lineHeight={2} size={3} textColor="tertiary" caps >Agenda</Heading>
+          <Layout fit><Fill><Heading  size={3} fit textColor="five">Education  </Heading></Fill><Fill><Heading textAlign="right" textColor="six">PNNL</Heading></Fill></Layout>
+          <Layout fit><Fill><Heading textAlign="left" textColor="six" >WSU</Heading></Fill><Fill><Heading  size={3} fit   textColor="five"> Experience</Heading></Fill></Layout>
+          <Heading  lineHeight={2} size={3}  textColor="five">Side Projects </Heading>
         </Slide>
 
         <Slide textColor="quartenary">
@@ -231,8 +231,27 @@ export default class Presentation extends React.Component {
             </List>
             </Fill>
             </Layout>
+            <Heading size={3} textAlign='center'  textColor="six">Spotify Web API</Heading>
         </Slide>
         
+        <Slide>
+          <Heading textColor="six" textAlign="left">How It's Built</Heading>
+          <Layout fit>
+            <Fill>
+              <List textColor="five" textFont="quartenary">
+                <ListItem>Session API</ListItem>
+                <ListItem>Authentication API</ListItem>
+              </List>
+            </Fill>
+            <Fill>
+              <List textColor="five" textFont="quartenary">
+                <ListItem>Client Side API</ListItem>
+                <ListItem>Anonymous API</ListItem>
+              </List>
+            </Fill>
+          </Layout>
+
+        </Slide>
         <Slide>
         <Heading textColor="six" > {<a style={{color:'#F7D08A'}} href="javascript: window.open('http://pickledemo.herokuapp.com/');">Pickle Song with Me.</a>} </Heading>
         </Slide>
