@@ -58,7 +58,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck
-        transition={['zoom', 'slide']}
+        transition={['fade','slide']}
         transitionDuration={500}
         theme={theme}
       >
@@ -234,7 +234,7 @@ export default class Presentation extends React.Component {
         </Slide>
         
         <Slide>
-        <Heading textColor="six" > {<a style={{color:'#F7D08A'}} href="javascript: window.open('http://www.haidendeaton.me');">Pickle Song with Me.</a>} </Heading>
+        <Heading textColor="six" > {<a style={{color:'#F7D08A'}} href="javascript: window.open('http://pickledemo.herokuapp.com/');">Pickle Song with Me.</a>} </Heading>
         </Slide>
       </Deck>
     );
